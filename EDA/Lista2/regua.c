@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+void regua (int n){
+    if (n==0) return;
+    else{
+        regua (n-1);
+        printf(".");
+        for (int i = 0; i < n; i++){
+            printf("-");
+        }
+        printf("\n");
+        regua (n-1);
+    }
+
+}

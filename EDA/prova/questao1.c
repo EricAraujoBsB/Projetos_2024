@@ -5,12 +5,12 @@ void funcao(){
     char str[101];
     scanf("%d", &x);
     if(x==1){
-        printf("entre com str\n");
+        // printf("entre com str\n");
         scanf("%[^\n]", str);
-        printf("esta aqui 1");
+        // printf("%s", str);
         funcao();
-        printf("%s", str);
-        funcao;
+        printf("%s\n", str);
+        funcao();
     }
 }
 

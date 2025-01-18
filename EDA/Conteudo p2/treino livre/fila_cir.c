@@ -8,7 +8,7 @@ typedef struct fila{
 
 int enfileira(fila *f, int x) {
     // Verifica se a fila está cheia
-    if (f->u == f->N) {
+    if ((f->u + 1) % f->N == f->p) {
         int novo_tamanho = f->N * 2;
         int *novo_dados = (int *)malloc(novo_tamanho * sizeof(int));
         if (!novo_dados) return 0; // Falha na alocação
